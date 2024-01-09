@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome import -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="yearnymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="css/register-page.css" />
+
+    <title>Pagina de Registro</title>
+  </head>
+  <body>
+    <dialog class="container-message-error">
+      <div class="container-erro">
+        <h1>Erro!</h1>
+
+        <!-- Possible errors -->
+        <p class="error-type"></p>
+
+        <button id="close-modal">Entendi</button>
+      </div>
+    </dialog>
+
+    <main class="container">
+      <div class="register-container">
+        <div class="container-smaller">
+          <h1>Registre-se</h1>
+
+          <input
+            id="name"
+            name="name"
+            type="name"
+            placeholder="Digite o seu name"
+          />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Digite o seu e-mail"
+          />
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Digite sua password"
+          />
+
+          <a href="/entrar">Já possui uma conta?</a>
+          <button id="botao-registro">Registrar</button>
+          <span class="copyright">Casa Limpa &copy; 2023</span>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="js/register-page.js"></script>
+</html>
