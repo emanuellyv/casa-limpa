@@ -28,7 +28,7 @@ export function emailValido(email) {
     }
 }
 
-// Função para validar seja, se há no mínimo 8 caractéres, uma letra minúscula, uma letra maiúscula, um número e um caractere especial.
+// Função para validar seja, se há no mínimo 8 caracteres, uma letra minúscula, uma letra maiúscula, um número e um caractere especial.
 export function senhaValida(senha) {
     const regexSenha = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
@@ -42,4 +42,12 @@ export function senhaValida(senha) {
 // Função para direcionar o usuário para a página principal
 export function redirecionarParaPaginaPrincipal() {
     location.href = "/";
+}
+
+// Função para validar nome do usuário
+export function nomeValido(nome) {
+    // Expressão regular para verificar se o nome contém apenas letras, espaços, hífens e apóstrofos
+    const regexNome = /^[A-Za-zÀ-ÖØ-öø-ÿ-' ]+$/;
+
+    return regexNome.test(nome);
 }

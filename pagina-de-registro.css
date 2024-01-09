@@ -53,14 +53,13 @@ body{
     text-align: center;
 }
 
-/* Containers de Login e Registro */
-.login-container ,.register-container{width: 50%}
-
+/* Containers Registro */
 .container{
-    width: 80%;
-    margin: auto;
+    width: 100%;
     padding: 1rem;
-    height:100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .container-menor {
@@ -72,36 +71,42 @@ body{
     padding: 3rem;
 }
 
-/* Login */
-.login-container{
+.register-container{
     float:left;
     background-color: #fafafa;
     height: 100%;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
     text-align: center;
+    width: 600px;
 }
-.login-container h1{
+
+.register-container h1{
     margin-bottom: 40px;
     font-size: 2.5em;
 }
 
-input[type="email"] , input[type="password"]{
+input[type="email"] , input[type="password"], input[type="name"]{
     width: 100%;
     padding: 1rem;
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
     border: none;
     background-color: #eeeeef;
     font-size: 1.2rem;
 }
 
-.login-container a{
+.register-container a{
     float: right;
     text-decoration: none;
     color: #000;
     transition: 0.3s all ease-in-out;
+    margin-top: 1rem;
 }
 
-.login-container button{
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+.register-container button{
     width: 75%;
     margin: 30px 0;
     padding: 10px;
@@ -115,54 +120,15 @@ input[type="email"] , input[type="password"]{
     font-family: 'Sora', sans-serif;
 }
 
-.login-container button:hover, #fechar-modal:hover{
+.register-container button:hover, #fechar-modal:hover{
     transform: scale(1.05);
 }
 
-.login-container button:active{
+.register-container button:active{
     transform: scale(.95);
 }
 
-.login-container .copyright{
+.register-container .copyright{
     display: inline-block;
     float: none;
-}
-
-/* Registro */
-.register-container{
-    float: right;
-    background-image: linear-gradient(135deg, #23212f 5%, #9526a9 95%);
-    height: 100%;
-    color:#fff;
-    border-radius:  0 10px 10px  0;
-    text-align: center;
-}
-
-.register-container h2{
-    margin: 30px 0;
-    font-size: 50px;
-    letter-spacing: 3px
-}
-
-.register-container p{
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.register-container button{
-    background-color: transparent;
-    border: 1px solid #FFF;
-    border-radius: 20px;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 20px;
-    text-transform: uppercase;
-    transition:0.2s all  ease-in-out;
-    font-family: 'Sora', sans-serif;
-}
-
-.register-container button:hover{
-    color: #9526a9;
-    background-color: #fff;
-    cursor: pointer;
 }
